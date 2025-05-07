@@ -46,6 +46,7 @@ class TemasVariabelsK {
         println("Hola Mundo!")
 
 
+        
         val readOnlyFiguras = listOf("cuadrado", "triangulo", "circulo")
         println(readOnlyFiguras)
         println("La primera figura es ${readOnlyFiguras[0]}")
