@@ -1,5 +1,5 @@
 package temasKotlin
-
+/*
 class tema3-if-when {
     val d: Int
     val check = true
@@ -16,3 +16,4 @@ class tema3-if-when {
     println(d2)
     println("--------------------------------------------------------------------")
 }
+ */

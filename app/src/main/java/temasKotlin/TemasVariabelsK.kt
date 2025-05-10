@@ -31,9 +31,9 @@ class TemasVariabelsK {
         val readOnlyFigures = listOf("cuadrado", "triangulo", "circulo")
         println(readOnlyFigures)
 
-        val figura: MutableList<String> = mutableListOf("cuadrado", "triangulo", "circulo")
+        //val figura: MutableList<String> = mutableListOf("cuadrado", "triangulo", "circulo")
         val readOnlyFigures2 = listOf("cuadrado", "triangulo", "circulo")
-        val mutableFiguras: List<String> = figura
+        //val mutableFiguras: List<String> = figura
 
         val frutas = setOf("manzana", "banana", "naranja")
         val frutas2 = mutableSetOf("manzana", "banana", "naranja")
