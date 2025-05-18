@@ -12,7 +12,6 @@ import com.example.introkotlin904.R
 class OPeracionAB : AppCompatActivity() {
 
     //
-
     private lateinit var et1: EditText
     private lateinit var et2: EditText
     private lateinit var tv1:TextView

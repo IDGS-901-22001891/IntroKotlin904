@@ -9,8 +9,6 @@
 
 
 
-
-
     <EditText
         android:id="@+id/et1"
         android:layout_width="250dp"
