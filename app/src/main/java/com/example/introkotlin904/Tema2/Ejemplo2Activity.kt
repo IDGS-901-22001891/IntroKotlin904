@@ -1,27 +1,27 @@
-package com.example.introkotlin904
+package com.example.introkotlin904.Tema2
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import tema1.Ejemplo1Activyty
+import com.example.introkotlin904.R
 
-class MenuActivity : AppCompatActivity() {
+class Ejemplo2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_menu)
+        setContentView(R.layout.activity_ejemplo2)
 
         //
-        val btn1Ejemplo1 = findViewById<Button>(R.id.btn1)
-        val btn1Ejemplo2 = findViewById<Button>(R.id.btn2)
+        val btnStart = findViewById<Button>(R.id.btnStaart)
+        val edtName = findViewById<EditText>(R.id.edtName)
 
-
-        btn1Ejemplo1.setOnClickListener {
-            navegateToEjemplo1()
+        btnStart.setOnClickListener {
+            val name = edtName.text.toString()
+            val intent = Intent(this, ResultadoActivity::class.java)
+            intent.putExtra("name", name)
+            startActivity(intent)
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -29,10 +29,5 @@ class MenuActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-    }
-
-    private fun navegateToEjemplo1() {
-        val intent = Intent(this, Ejemplo1Activyty::class.java)
-        startActivity(intent)
     }
 }

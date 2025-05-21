@@ -7,4 +7,22 @@
     android:layout_height="match_parent"
     tools:context=".MenuActivity">
 
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="63dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:text="Cinepolis"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="179dp"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
