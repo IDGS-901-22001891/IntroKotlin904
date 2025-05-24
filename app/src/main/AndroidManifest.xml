@@ -13,14 +13,31 @@
         android:theme="@style/Theme.IntroKotlin904"
         tools:targetApi="31">
         <activity
-            android:name=".ResultadoActivity"
+            android:name=".Palindromo.VerificadorPalindromo"
             android:exported="false" />
+        <activity
+            android:name=".Palindromo.PracticaPalindromo"
+            android:exported="false" />
+        <activity
+            android:name=".Tema4.Ejemplo4"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".Tema3.Ejemplo3Activity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".ResultadoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight" />
         <activity
             android:name=".Tema2.Ejemplo2Activity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight" />
         <activity
             android:name=".MenuActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,13 +46,8 @@
         </activity>
         <activity
             android:name="tema1.Ejemplo1Activyty"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight" />
     </application>
 
 </manifest>
