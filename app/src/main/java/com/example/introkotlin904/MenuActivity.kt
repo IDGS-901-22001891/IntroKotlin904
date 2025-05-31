@@ -7,8 +7,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.introkotlin904.Diccionario.BuscarPalabras
 import com.example.introkotlin904.Tema4.Ejemplo4
 import tema1.Ejemplo1Activyty
+import com.example.introkotlin904.Diccionario.DiccionarioTraductor
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +21,10 @@ class MenuActivity : AppCompatActivity() {
         //
         val btn1Ejemplo1 = findViewById<Button>(R.id.btn1)
         val btn2Ejemplo2 = findViewById<Button>(R.id.btn2)
-        val btn3Tarea = findViewById<Button>(R.id.btn2)
+        val btn3 = findViewById<Button>(R.id.btn3)
+        val btn4 = findViewById<Button>(R.id.btn4)
+        val btnPalindromo = findViewById<Button>(R.id.btn5)
+        val btnDiccionario = findViewById<Button>(R.id.btn6)
 
 
         btn1Ejemplo1.setOnClickListener {
@@ -30,9 +35,15 @@ class MenuActivity : AppCompatActivity() {
             navegateToEjemplo2()
         }
 
-        btn3Tarea.setOnClickListener {
-            navegateToTarea1()
+
+        btnDiccionario.setOnClickListener {
+            // Creamos un intente para poder moverse entr las pantallas:
+            val intent = Intent(this, DiccionarioTraductor::class.java)
+
+            // Iniciamos la nueva pantalla
+            startActivity(intent)
         }
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

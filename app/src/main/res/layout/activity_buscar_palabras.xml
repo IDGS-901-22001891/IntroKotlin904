@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7CC2C6"
+    tools:context=".Diccionario.BuscarPalabras">
+
+    <!-- Título "Buscar Palabras" -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Buscar Palabras"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Opciones de búsqueda (RadioButtons) -->
+    <RadioGroup
+        android:id="@+id/rgIdiomaBusqueda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo">
+
+        <RadioButton
+            android:id="@+id/rbEspanol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:buttonTint="#000000"
+            android:text="Español"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/rbIngles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#000000"
+            android:text="Inglés"
+            android:textColor="#000000" />
+    </RadioGroup>
+
+    <!-- Etiqueta "Palabra a Buscar" -->
+    <TextView
+        android:id="@+id/tvPalabraBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Palabra a Buscar"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgIdiomaBusqueda" />
+
+    <!-- Campo de entrada para la palabra -->
+    <EditText
+        android:id="@+id/etPalabraBuscar"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:hint="Ball"
+        android:inputType="text"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPalabraBuscar" />
+
+    <!-- Botón Buscar -->
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Buscar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPalabraBuscar" />
+
+    <!-- Mensaje de resultado -->
+    <TextView
+        android:id="@+id/tvResultadoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="palabra encontrada"
+        android:textColor="#000000"
+        android:textColorLink="#0415EF"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscar" />
+
+    <!-- Resultado de la búsqueda -->
+    <TextView
+        android:id="@+id/tvPalabraEncontrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="PELOTA"
+        android:textColor="#337736"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultadoLabel" />
+
+    <!-- Botón Regresar -->
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Regresar al Menú"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

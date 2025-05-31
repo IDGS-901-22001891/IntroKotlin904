@@ -1,0 +1,52 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7CC2C6"
+    tools:context=".Diccionario.DiccionarioTraductor">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="123dp"
+        android:text="Diccionario Inglés Español"
+        android:textColor="#9456c7"
+        android:textColorHighlight="#9456c7"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCapturarDicc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="118dp"
+        android:layout_marginEnd="123dp"
+        android:text="Capturar Palabras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <Button
+        android:id="@+id/btnGuardarDicc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="288dp"
+        android:text="Buscar Palabras"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="300dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

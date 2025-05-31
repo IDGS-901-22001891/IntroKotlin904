@@ -11,18 +11,82 @@
         android:id="@+id/btn1"
         android:layout_width="365dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="23dp"
         android:text="Ejemplo"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="63dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btn2"
         android:layout_width="365dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="23dp"
         android:text="Cinepolis"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="179dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="23dp"
+        android:text="Cinepolis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="23dp"
+        android:text="Cinepolis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn3"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="23dp"
+        android:text="Palindromo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn4"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="23dp"
+        android:text="Diccionario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn5"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

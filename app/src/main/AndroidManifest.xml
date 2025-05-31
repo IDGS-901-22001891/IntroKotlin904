@@ -13,11 +13,21 @@
         android:theme="@style/Theme.IntroKotlin904"
         tools:targetApi="31">
         <activity
-            android:name=".Palindromo.VerificadorPalindromo"
-            android:exported="false" />
+            android:name=".Diccionario.BuscarPalabras"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight"/>
         <activity
-            android:name=".Palindromo.PracticaPalindromo"
-            android:exported="false" />
+            android:name=".Diccionario.AgregarPalabras"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight"/>
+        <activity
+            android:name=".Diccionario.DiccionarioTraductor"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight"/>
+        <activity
+            android:name=".Palindromo.VerificadorPalindromo"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight"/>
         <activity
             android:name=".Tema4.Ejemplo4"
             android:exported="false"
