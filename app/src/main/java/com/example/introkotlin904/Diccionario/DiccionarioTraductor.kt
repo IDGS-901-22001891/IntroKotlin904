@@ -22,7 +22,7 @@ class DiccionarioTraductor : AppCompatActivity() {
 
         btnCapturar.setOnClickListener {
             // Creamos un intente para poder moverse entr las pantallas:
-            val intent = Intent(this, BuscarPalabras::class.java)
+            val intent = Intent(this, AgregarPalabras::class.java)
 
             // Iniciamos la nueva pantalla
             startActivity(intent)
@@ -44,26 +44,3 @@ class DiccionarioTraductor : AppCompatActivity() {
         }
     }
 }
-
-
-/*
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        val btnGoToSecond = findViewById<Button>(R.id.btnGoToSecond)
-
-        btnGoToSecond.setOnClickListener {
-            // Crear el Intent para cambiar de Activity
-            val intent = Intent(this, SecondActivity::class.java)
-
-            // Iniciar la nueva Activity
-            startActivity(intent)
-
-            // Opcional: animación al cambiar de pantalla
-            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
-        }
-    }
-}
-*/

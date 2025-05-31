@@ -8,7 +8,6 @@
     android:background="#7CC2C6"
     tools:context=".Diccionario.BuscarPalabras">
 
-    <!-- Título "Buscar Palabras" -->
     <TextView
         android:id="@+id/tvTitulo"
         android:layout_width="wrap_content"
@@ -22,7 +21,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Opciones de búsqueda (RadioButtons) -->
     <RadioGroup
         android:id="@+id/rgIdiomaBusqueda"
         android:layout_width="wrap_content"
@@ -51,7 +49,6 @@
             android:textColor="#000000" />
     </RadioGroup>
 
-    <!-- Etiqueta "Palabra a Buscar" -->
     <TextView
         android:id="@+id/tvPalabraBuscar"
         android:layout_width="wrap_content"
@@ -64,9 +61,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rgIdiomaBusqueda" />
 
-    <!-- Campo de entrada para la palabra -->
     <EditText
-        android:id="@+id/etPalabraBuscar"
+        android:id="@+id/edtPalabraBuscar"
         android:layout_width="200dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
@@ -79,7 +75,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvPalabraBuscar" />
 
-    <!-- Botón Buscar -->
     <Button
         android:id="@+id/btnBuscar"
         android:layout_width="200dp"
@@ -90,9 +85,8 @@
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPalabraBuscar" />
+        app:layout_constraintTop_toBottomOf="@+id/edtPalabraBuscar" />
 
-    <!-- Mensaje de resultado -->
     <TextView
         android:id="@+id/tvResultadoLabel"
         android:layout_width="wrap_content"
@@ -107,22 +101,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnBuscar" />
 
-    <!-- Resultado de la búsqueda -->
     <TextView
-        android:id="@+id/tvPalabraEncontrada"
+        android:id="@+id/txvResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="224dp"
         android:text="PELOTA"
         android:textColor="#337736"
         android:textSize="24sp"
         android:textStyle="bold"
         android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegresar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvResultadoLabel" />
 
-    <!-- Botón Regresar -->
     <Button
         android:id="@+id/btnRegresar"
         android:layout_width="wrap_content"

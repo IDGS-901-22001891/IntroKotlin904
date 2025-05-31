@@ -15,7 +15,7 @@ import java.io.FileNotFoundException
 
 class Ejemplo4 : AppCompatActivity() {
 
-    //
+    // Creamos el txt
     private val fileName = "datos.txt"
 
 
